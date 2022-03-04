@@ -146,7 +146,7 @@ body {
 
 
 .text {
-    max-width: 70ch;
+    max-width: 65ch;
     text-align: start;
 }
 
@@ -299,7 +299,6 @@ body {
         justify-content: center;
         .project {
             .project-title {
-                font-size: 24px;
                 a {
                     text-decoration: none;
                     color: black;
@@ -309,7 +308,7 @@ body {
                     @extend .fa-solid;
                     content: fa-content($fa-var-arrow-up-right-from-square);
                     font-weight: 900;
-                    font-size: 0.5em;
+                    font-size: small;
                     margin-left: 1px;
                 }
             }

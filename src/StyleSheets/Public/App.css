@@ -9107,7 +9107,7 @@ body {
 }
 
 .text {
-  max-width: 70ch;
+  max-width: 65ch;
   text-align: start;
 }
 
@@ -9248,9 +9248,6 @@ body {
   grid-template-columns: minmax(auto, 80ch);
   justify-content: center;
 }
-.main-section .projects-section .project .project-title {
-  font-size: 24px;
-}
 .main-section .projects-section .project .project-title a {
   text-decoration: none;
   color: black;
@@ -9258,7 +9255,7 @@ body {
 .main-section .projects-section .project .project-title a::after {
   content: "\f08e";
   font-weight: 900;
-  font-size: 0.5em;
+  font-size: small;
   margin-left: 1px;
 }
 .main-section .rutgers-section {

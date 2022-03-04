@@ -38,8 +38,6 @@ export const Technologies: Card[] = [
             </>
         ),
         resources: [
-            <>
-            </>
         ]
     }, 
     {
@@ -50,9 +48,6 @@ export const Technologies: Card[] = [
             </>
         ), 
         resources: [
-            <>
-            
-            </>
         ]
     }, 
     {
@@ -63,9 +58,6 @@ export const Technologies: Card[] = [
             </>
         ), 
         resources: [
-            <>
-            
-            </>
         ]
     }
 ]
@@ -80,9 +72,6 @@ export const Tools: Card[] = [
             </>
         ),
         resources: [
-            <>
-
-            </>
         ]
     }
 ]

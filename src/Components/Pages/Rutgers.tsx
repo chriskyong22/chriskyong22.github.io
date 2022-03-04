@@ -7,24 +7,32 @@ export const Rutgers = () => {
             {
                 Courses.map((course, idx) => {
                     return (
-                        <div className="class">
-                            <div className="class-header">
-                                <h3>
+                        <article key={`Course-${idx}`} className="class">
+                            <header aria-label="class header" className="class-header">
+                                <h2 className="h3">
                                     <a href={course.link} rel="noreferrer noopener" target="_blank">
                                         {course.title}
                                     </a>
-                                </h3>
-                                <h4 className="class-professor">
+                                </h2>
+                                <h2 className="class-professor h4">
                                     Instructor {course.professor} 
-                                </h4>
-                            </div>
-                            <div className="class-description text">
+                                </h2>
+                            </header>
+                            <div aria-label="class description" className="class-description text">
                                 {course.description}
                             </div>
-                            <div className="class-footer">
-                                {course.resources}
+                            <div aria-label="class footer" className="class-footer">
+                                {
+                                    course.resources.map((resource, _idx) => {
+                                        return (
+                                            <div key={`class-footer${idx}-${_idx}`}>
+                                                {resource}
+                                            </div>
+                                        )
+                                    })
+                                }
                             </div>
-                        </div>
+                        </article>
                     )
                 })
             }
