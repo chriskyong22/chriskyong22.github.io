@@ -9115,6 +9115,21 @@ body {
   text-align: center;
 }
 
+.skip-nav-link {
+  position: absolute;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transform: translateY(-125%);
+  transition: transform 250ms ease-in;
+}
+
+.skip-nav-link:focus {
+  position: relative;
+  transform: translateY(0);
+}
+
 .nav-bar {
   background-color: lightblue;
   text-align: center;
@@ -9220,6 +9235,7 @@ body {
   grid-template-columns: minmax(auto, 70ch);
   justify-content: center;
   background-color: #fff4f4;
+  color: #ff4b4b;
 }
 .main-section .about-section .interest-section h3 {
   color: #255b98;
@@ -9305,18 +9321,20 @@ body {
   margin-left: 1px;
 }
 .main-section .learn-section .section {
-  max-width: 80%;
   margin: 0 auto;
   background-color: #efffff;
   padding: 1.25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.1rem;
+  gap: 0.15rem;
 }
 .main-section .learn-section .section .section-title {
   position: relative;
   color: #ff4d4d;
+}
+.main-section .learn-section .section .section-title a {
+  color: blue;
 }
 .main-section .learn-section .section .section-title::after {
   content: "";
@@ -9325,13 +9343,19 @@ body {
   width: 100%;
   left: 0px;
   bottom: 0px;
-  border-bottom: 2px solid #ff4d4d;
+  border-bottom: 1px solid #ff4d4d;
 }
 .main-section .learn-section .section .book .book-footer a {
   color: blue;
 }
 .main-section .learn-section .section .technology {
-  padding: 4px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+.main-section .learn-section .section .technology a {
+  color: blue;
 }
 .main-section .learn-section .section:nth-child(even) {
   background-color: #e8ffff;
@@ -9413,10 +9437,8 @@ footer {
   background-color: #effbff;
   box-sizing: content-box;
   padding: 0.5rem;
-  text-align: center;
-}
-footer span {
   font-size: small;
+  text-align: center;
 }
 
 /*# sourceMappingURL=App.css.map */

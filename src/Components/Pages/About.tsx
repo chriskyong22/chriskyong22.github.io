@@ -29,7 +29,7 @@ export const About = () => {
                         Reading
                     </h3>
                     <p className="text">
-                        I love the fantasy and sci-fi genre. I am currently reading <a target="_blank" rel="noreferrer noopener" href="https://www.goodreads.com/book/show/9243302-the-machine-stops"> The Machine Stops</a> by E.M. Foster and <a target="_blank" rel="noreferrer noopener" href="https://www.goodreads.com/book/show/41160292-exhalation"> Exhalation Stories</a> by Ted Chiang. 
+                        I love the fantasy and sci-fi genre. I am currently reading <a target="_blank" rel="noreferrer noopener" href="https://www.goodreads.com/book/show/41160292-exhalation"> Exhalation Stories</a> by Ted Chiang. 
                         Check out my <a target="_blank" rel="noreferrer noopener" href="https://goodreads.com/chriskyong">goodreads</a> to see my book recommendations or to recommend me a book!
                     </p>
                 </article>

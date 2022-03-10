@@ -14,10 +14,13 @@ function App() {
   return (
       <BrowserRouter>
         <div className="layout">
+          <a className="skip-nav-link" href="#main">
+            Skip Navigation
+          </a>
           <header>
             <NavBar/>
           </header>
-          <section className="main-section">
+          <main id="main" className="main-section">
             <Routes>
               <Route path="/">
                 <Route index element={<About />}/>
@@ -29,7 +32,7 @@ function App() {
                 <Route path="*" element={<NoPage />}/>
               </Route>
             </Routes>
-          </section>
+          </main>
           <Footer/>
         </div>
       </BrowserRouter>

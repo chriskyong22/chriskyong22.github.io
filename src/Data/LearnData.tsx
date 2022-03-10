@@ -33,8 +33,9 @@ export const Technologies: Card[] = [
         title: "Redux",
         mainContent: (
             <>
-                From my personal projects, I have been running into problems with managing shared state. 
-                With Redux being a centralized state manager, I plan to create a consistent way to interact with global state.  
+                I recently made a glorified excel sheet <a href="https://chriskyong22.github.io/LostArkMarketCalculatorWebsite/"> website </a> to calculate the profitability of market transactions in a game. 
+                I was running into problems with managing shared states and updating the local indexedDB. 
+                I realized my solution was to use a centralized state manager. With Redux, I hope to learn how to manage global states with actions and thunks.
             </>
         ),
         resources: [
