@@ -247,7 +247,7 @@ body {
         a:hover {
             opacity: 1;
         }
-        
+
         a:hover:after {
             width: 100%;
             background-color: currentColor;
@@ -269,6 +269,7 @@ body {
 }
 
 .main-section {
+    scroll-margin-top: 1.25rem;
     text-align: center;
     .about-section {
         display: flex;

@@ -9205,6 +9205,7 @@ body {
 }
 
 .main-section {
+  scroll-margin-top: 1.25rem;
   text-align: center;
 }
 .main-section .about-section {
