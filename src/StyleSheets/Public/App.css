@@ -9397,11 +9397,14 @@ body {
   padding: 0px;
 }
 .main-section .contact-section .contactLinks .email {
-  font-size: calc(var(--icon-width) / 1.5);
+  font-size: calc(var(--icon-width) / 1.15);
   color: black;
   cursor: copy;
-  transform: scale(1.25);
-  transition: transform ease-in 500ms;
+  padding: 0px;
+  margin: 0px;
+  background-color: transparent;
+  border-color: transparent;
+  transition: transform ease-in 0.5s;
 }
 .main-section .contact-section .contactLinks .email[tooltip-data] {
   position: relative;
@@ -9409,18 +9412,15 @@ body {
 .main-section .contact-section .contactLinks .email[tooltip-data]::after {
   content: attr(tooltip-data);
   font-size: 1rem;
-  position: absolute;
-  bottom: 0px;
-  left: -25%;
-  right: -25%;
-  display: inline-block;
+  display: block;
+  transition: transform ease-in-out 0.5s;
   transform: scale(0);
 }
 .main-section .contact-section .contactLinks .email:hover::after {
   transform: scale(1);
 }
 .main-section .contact-section .contactLinks .email:hover {
-  transform: scale(1.35);
+  transform: scale(1.25);
 }
 .main-section .contact-section .contactLinks .github {
   width: var(--icon-width);
