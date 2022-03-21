@@ -30,7 +30,7 @@ export const NavBar = () => {
                 </circle>
             </svg>
             <div className="nav-links">
-                <NavLink  to="/About">
+                <NavLink to="/About">
                     About
                 </NavLink>
                 {/* <NavLink to="/Projects">

@@ -2,7 +2,7 @@ import React from 'react';
 import './StyleSheets/Public/App.css';
 import { NavBar } from "./Components/NavBar";
 import { Footer } from "./Components/Footer";
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { About } from "./Components/Pages/About"
 import { Projects } from "./Components/Pages/Projects"
 import { Rutgers } from "./Components/Pages/Rutgers"
@@ -23,7 +23,7 @@ function App() {
           <main id="main" className="main-section">
             <Routes>
               <Route path="/">
-                <Route index element={<About />}/>
+                <Route path="/" element={<Navigate replace to="/About"/>}/>
                 <Route path="About" element={<About />}/>
                 <Route path="Projects" element={<Projects />}/>
                 <Route path="Rutgers" element={<Rutgers />}/>
