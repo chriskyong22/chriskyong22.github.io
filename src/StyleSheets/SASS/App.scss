@@ -223,12 +223,11 @@ body {
         gap: 0.5em;
         a {
             color: rgb(255, 77, 77);
-            opacity: 0.8;
+            opacity: 0.85;
             text-decoration: none;
-        }
-
-        .active {
-            opacity: 1;
+            &[aria-current="page"] {
+                opacity: 1;
+            }
         }
 
         a:after {
@@ -237,19 +236,20 @@ body {
             margin: 0 auto;
 
             height: 1px;
-            width: 0px;
+            transform: scale(0);
 
             background-color: transparent;
             transition: 
-                width ease-in 250ms, 
+                transform ease-in 250ms, 
                 background-color ease-in 250ms;
         }
-        a:hover {
+
+        a:hover, a:focus {
             opacity: 1;
         }
 
         a:hover:after {
-            width: 100%;
+            transform: scale(100%);
             background-color: currentColor;
         }
     }

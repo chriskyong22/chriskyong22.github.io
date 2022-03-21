@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom"
 export const NavBar = () => {
     return (
         <nav className="nav-bar">
-            <svg viewBox="0 0 50 25">
+            <svg aria-hidden="true" viewBox="0 0 50 25">
                 <circle 
                     className="circle-one"
                     r="8px" 

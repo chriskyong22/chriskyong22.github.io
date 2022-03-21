@@ -9181,10 +9181,10 @@ body {
 }
 .nav-bar .nav-links a {
   color: #ff4d4d;
-  opacity: 0.8;
+  opacity: 0.85;
   text-decoration: none;
 }
-.nav-bar .nav-links .active {
+.nav-bar .nav-links a[aria-current=page] {
   opacity: 1;
 }
 .nav-bar .nav-links a:after {
@@ -9192,15 +9192,15 @@ body {
   display: block;
   margin: 0 auto;
   height: 1px;
-  width: 0px;
+  transform: scale(0);
   background-color: transparent;
-  transition: width ease-in 250ms, background-color ease-in 250ms;
+  transition: transform ease-in 250ms, background-color ease-in 250ms;
 }
-.nav-bar .nav-links a:hover {
+.nav-bar .nav-links a:hover, .nav-bar .nav-links a:focus {
   opacity: 1;
 }
 .nav-bar .nav-links a:hover:after {
-  width: 100%;
+  transform: scale(100%);
   background-color: currentColor;
 }
 
