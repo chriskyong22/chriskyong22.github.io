@@ -1,7 +1,11 @@
-import react from "react"
+import react, { useEffect } from "react"
 
 export const Contact = () => {
 
+    useEffect(() => {
+        document.title = 'CY | Contact me';
+    }, [])
+    
     const copyToClipBoard = async (event: react.MouseEvent<HTMLButtonElement, MouseEvent>) => {
         const email =  "christopher.kyong@rutgers.edu";
         await navigator.clipboard.writeText(email);

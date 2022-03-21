@@ -1,8 +1,12 @@
-import { title } from "process"
-import react from "react"
+import react, { useEffect } from "react"
 import { Books, Technologies, Tools } from "../../Data/LearnData"
 
 export const Learning = () => {
+
+    useEffect(() => {
+        document.title = 'CY | Currently Learning';
+    }, [])
+
     return (
         <section className="learn-section">
             <section className="section">

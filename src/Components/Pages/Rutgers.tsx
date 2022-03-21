@@ -1,7 +1,10 @@
-import react from "react"
+import react, { useEffect } from "react"
 import { Courses } from "../../Data/RutgersData"
 
 export const Rutgers = () => {
+    useEffect(() => {
+        document.title = 'CY | Time at Rutgers'
+    }, [])
     return (
         <section className="rutgers-section">
             {
