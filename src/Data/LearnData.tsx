@@ -30,7 +30,7 @@ export const Books: Card[] = [
 
 export const Technologies: Card[] = [
     {
-        title: "Redux",
+        title: "Redux/Redux Toolkit",
         mainContent: (
             <>
                 I recently made a glorified excel sheet <a href="https://chriskyong22.github.io/LostArkMarketCalculatorWebsite/"> website </a> to calculate the profitability of market transactions in a game. 
@@ -60,16 +60,38 @@ export const Technologies: Card[] = [
         ), 
         resources: [
         ]
+    }, 
+    {
+        title: "GraphQL",
+        mainContent: (
+            <>
+                GraphQL reminds me of the database schema definitions described in chapter 4 of <i>Designing Data-Intensive Applications</i>. 
+                It seems natural to design APIs where we can specify what fields we want instead of a generic template.
+            </>
+        ),
+        resources: [
+
+        ]
+    }, 
+    {
+        title: "Webpack",
+        mainContent: (
+            <>
+                Understanding how to bundle/minify my source files and assets.
+            </>
+        ),
+        resources: [
+
+        ]
     }
 ]
 
 export const Tools: Card[] = [
     {
-        title: "InkScape/Illustrator",
+        title: "Figma",
         mainContent: (
             <>
-                SVGs are the future for responsive web icons. 
-                I want to create tailored SVGs for personal use for responsive web design.  
+                While I was trying to learn Inkscape/Illustrator, I found Figma! For me, Figma is an excellent substitute for Inkscape/Illustrator. I like how easy it is to learn and I can share mockups with a click of a link.
             </>
         ),
         resources: [

@@ -176,6 +176,7 @@ body {
     padding: 1em;
     min-height: 2rem;
 
+
     svg {
         padding: 0px;
         margin: 0px;
@@ -222,7 +223,12 @@ body {
         gap: 0.5em;
         a {
             color: rgb(255, 77, 77);
+            opacity: 0.8;
             text-decoration: none;
+        }
+
+        .active {
+            opacity: 1;
         }
 
         a:after {
@@ -238,7 +244,10 @@ body {
                 width ease-in 250ms, 
                 background-color ease-in 250ms;
         }
-
+        a:hover {
+            opacity: 1;
+        }
+        
         a:hover:after {
             width: 100%;
             background-color: currentColor;

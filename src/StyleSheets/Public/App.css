@@ -9181,7 +9181,11 @@ body {
 }
 .nav-bar .nav-links a {
   color: #ff4d4d;
+  opacity: 0.8;
   text-decoration: none;
+}
+.nav-bar .nav-links .active {
+  opacity: 1;
 }
 .nav-bar .nav-links a:after {
   content: "";
@@ -9191,6 +9195,9 @@ body {
   width: 0px;
   background-color: transparent;
   transition: width ease-in 250ms, background-color ease-in 250ms;
+}
+.nav-bar .nav-links a:hover {
+  opacity: 1;
 }
 .nav-bar .nav-links a:hover:after {
   width: 100%;

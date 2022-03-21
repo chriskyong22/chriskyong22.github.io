@@ -1,5 +1,5 @@
 import react from "react"
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 export const NavBar = () => {
     return (
@@ -30,24 +30,24 @@ export const NavBar = () => {
                 </circle>
             </svg>
             <div className="nav-links">
-                <Link to="/About">
+                <NavLink  to="/About">
                     About
-                </Link>
-                {/* <Link to="/Projects">
+                </NavLink>
+                {/* <NavLink to="/Projects">
                     Projects
-                </Link> */}
-                <Link to="/Rutgers">
+                </NavLink> */}
+                <NavLink to="/Rutgers">
                     Rutgers
-                </Link>
-                {/* <Link to="/Books">
+                </NavLink>
+                {/*<NavLink to="/Books">
                     Books
-                </Link> */}
-                <Link to="/Learn">
+                </NavLink> */}
+                <NavLink to="/Learn">
                     Learning
-                </Link>
-                <Link to="/Contact">
+                </NavLink>
+                <NavLink to="/Contact">
                     Contact Me
-                </Link>
+                </NavLink>
             </div>
         </nav>
     )
