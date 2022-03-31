@@ -1,4 +1,5 @@
 import React, { useEffect } from "react"
+import { Link } from "react-router-dom"
 
 export const About = () => {
 
@@ -14,12 +15,12 @@ export const About = () => {
                         Hi, I'm Christopher Yong!
                     </h2>
                     <h3 className="h4">
-                        However, some might know me as Pls. 
+                        But, some might know me as Pls. 
                     </h3>
                     <p>
                         During my enrollment at Rutgers, I was proactive in the online Rutgers CS community.
                         In the Rutgers CS <a target="_blank" rel="noreferrer noopener" href="https://discord.com/invite/SgTXkjF">discord</a>, I created study guides for popular CS courses and shared them for free. 
-                        Over hundreds of students have used my study guides to learn. Check out my study guides <a href="/Rutgers">here</a>!
+                        Over hundreds of students have used my study guides to learn. Check out my study guides <Link to="/Rutgers">here</Link>!
                     </p>
                 </article>
             </section>
