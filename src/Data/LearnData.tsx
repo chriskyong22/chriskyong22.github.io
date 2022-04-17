@@ -35,10 +35,17 @@ export const Technologies: Card[] = [
             <>
                 I recently made a glorified excel sheet <a href="https://chriskyong22.github.io/LostArkMarketCalculatorWebsite/"> website </a> to calculate the profitability of market transactions in a game. 
                 I was running into problems with managing shared states and updating the local indexedDB. 
-                I realized my solution was to use a centralized state manager. With Redux, I hope to learn how to manage global states with actions and thunks.
+                I realized my solution was to use a centralized state manager. With Redux, I hope to learn how to manage global states with actions and thunks/Sagas.
             </>
         ),
         resources: [
+            <a
+                href="https://slash-eyebrow-406.notion.site/Redux-de5ccd6d79924c9f9b14512c490823c5"
+                rel="noreferrer noopener"
+                target="_blank"
+            >
+                Redux Notes
+            </a>
         ]
     }, 
     {
@@ -74,14 +81,20 @@ export const Technologies: Card[] = [
         ]
     }, 
     {
-        title: "Webpack",
+        title: "Angular + RxJS",
         mainContent: (
             <>
-                Understanding how to bundle/minify my source files and assets.
+               Learning about Reactive Programming, the incremental DOM, Dependency Injection, and the Angular Framework.
             </>
         ),
         resources: [
-
+            <a
+            href="https://slash-eyebrow-406.notion.site/RxJS-68a5cd8127944dd4b36bbfac790b9bd5"
+            rel="noreferrer noopener"
+            target="_blank"
+            >
+                RxJS Notes
+            </a>
         ]
     }
 ]

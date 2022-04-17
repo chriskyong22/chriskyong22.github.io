@@ -20,11 +20,10 @@ export const About = () => {
                     <p>
                         During my enrollment at Rutgers, I was proactive in the online Rutgers CS community.
                         In the Rutgers CS <a target="_blank" rel="noreferrer noopener" href="https://discord.com/invite/SgTXkjF">discord</a>, I created study guides for popular CS courses and shared them for free. 
-                        Over hundreds of students have used my study guides to learn. Check out my study guides <Link to="/Rutgers">here</Link>!
+                        Over hundreds of students have used my study guides to learn. Check out my <Link to="/Rutgers">study guides</Link>!
                     </p>
                 </article>
             </section>
-
 
             <section className="interest-section">
                 <h2 className="h3">
