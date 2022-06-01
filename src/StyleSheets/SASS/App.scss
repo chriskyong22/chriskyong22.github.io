@@ -115,8 +115,9 @@ h4 {
 }
 
 :root {
-    --clr-blue-light: rgb(173, 216, 230, 80%);
+    --clr-blue-light: rgb(173, 216, 230, 75%);
     --clr-black-light: rgb(0, 0, 0, 80%);
+    --clr-orange: rgb(255, 77, 77);
 }
 
 body {
@@ -132,12 +133,12 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 @mixin linkIcon() {
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
-    
     a::after {
         @extend %fa-icon;
         @extend .fa-solid;
@@ -230,36 +231,32 @@ body {
         display: flex;
         gap: 0.5em;
         a {
-            color: rgb(255, 77, 77);
+            color: var(--clr-orange);
             opacity: 0.85;
-            text-decoration: none;
             &[aria-current="page"] {
                 opacity: 1;
                 font-weight: bold;
             }
         }
 
-        a:after {
+        a::after {
             content: '';
             display: block;
-            margin: 0 auto;
+            margin-inline: auto;
 
             height: 1px;
             transform: scale(0);
-
-            background-color: transparent;
+            background-color: currentColor;
             transition: 
-                transform ease-in 250ms, 
-                background-color ease-in 250ms;
+                transform 250ms linear, 
         }
 
         a:hover, a:focus {
             opacity: 1;
         }
 
-        a:hover:after {
+        a:hover::after {
             transform: scale(100%);
-            background-color: currentColor;
         }
     }
 }

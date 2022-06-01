@@ -9094,8 +9094,9 @@ h4 {
 }
 
 :root {
-  --clr-blue-light: rgb(173, 216, 230, 80%);
+  --clr-blue-light: rgb(173, 216, 230, 75%);
   --clr-black-light: rgb(0, 0, 0, 80%);
+  --clr-orange: rgb(255, 77, 77);
 }
 
 body {
@@ -9109,6 +9110,11 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .text {
@@ -9189,29 +9195,27 @@ body {
   gap: 0.5em;
 }
 .nav-bar .nav-links a {
-  color: #ff4d4d;
+  color: var(--clr-orange);
   opacity: 0.85;
-  text-decoration: none;
 }
 .nav-bar .nav-links a[aria-current=page] {
   opacity: 1;
   font-weight: bold;
 }
-.nav-bar .nav-links a:after {
+.nav-bar .nav-links a::after {
   content: "";
   display: block;
-  margin: 0 auto;
+  margin-inline: auto;
   height: 1px;
   transform: scale(0);
-  background-color: transparent;
-  transition: transform ease-in 250ms, background-color ease-in 250ms;
+  background-color: currentColor;
+  transition: transform 250ms linear;
 }
 .nav-bar .nav-links a:hover, .nav-bar .nav-links a:focus {
   opacity: 1;
 }
-.nav-bar .nav-links a:hover:after {
+.nav-bar .nav-links a:hover::after {
   transform: scale(100%);
-  background-color: currentColor;
 }
 
 .main-section {
@@ -9229,10 +9233,6 @@ body {
   grid-template-columns: minmax(auto, 70ch);
   justify-content: center;
   background-color: #fff9f9;
-}
-.main-section .about-section .info-section .main-text a {
-  text-decoration: none;
-  color: inherit;
 }
 .main-section .about-section .info-section .main-text a::after {
   content: "\f08e";
@@ -9260,10 +9260,6 @@ body {
 }
 .main-section .about-section .interest-section h4 {
   color: #4974a5;
-}
-.main-section .about-section .interest-section a {
-  text-decoration: none;
-  color: inherit;
 }
 .main-section .about-section .interest-section a::after {
   content: "\f08e";
@@ -9298,10 +9294,6 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.main-section .rutgers-section a {
-  text-decoration: none;
-  color: inherit;
-}
 .main-section .rutgers-section a::after {
   content: "\f08e";
   font-weight: 900;
@@ -9327,10 +9319,6 @@ body {
 }
 .main-section .rutgers-section .class:nth-child(even) {
   background-color: #fdf7f7;
-}
-.main-section .learn-section a {
-  text-decoration: none;
-  color: inherit;
 }
 .main-section .learn-section a::after {
   content: "\f08e";
