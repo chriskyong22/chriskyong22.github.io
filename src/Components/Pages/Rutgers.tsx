@@ -18,8 +18,6 @@ export const Rutgers = () => {
                                 course={course} 
                             />
                         </React.Fragment>
-
-
                         // <article key={`Course-${idx}`} className="class">
                         //     <header aria-label="class header" className="class-header">
                         //         <h2 className="h3">

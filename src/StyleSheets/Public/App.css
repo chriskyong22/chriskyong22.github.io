@@ -9277,32 +9277,15 @@ a {
 }
 .main-section .rutgers-section {
   padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(45ch, 1fr));
+  gap: 1rem 0rem;
 }
 .main-section .rutgers-section a::after {
   content: "\f08e";
   font-weight: 900;
   font-size: 0.5em;
   margin-left: 1px;
-}
-.main-section .rutgers-section .class {
-  padding: 1rem;
-  box-sizing: content-box;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.main-section .rutgers-section .class .class-header {
-  color: #ff4b4b;
-}
-.main-section .rutgers-section .class .class-header .class-professor {
-  color: #333;
-}
-.main-section .rutgers-section .class .class-footer {
-  display: flex;
-  flex-direction: column;
 }
 .main-section .rutgers-section .class:nth-child(even) {
   background-color: #fdf7f7;

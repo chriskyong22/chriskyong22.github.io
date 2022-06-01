@@ -343,33 +343,11 @@ a {
     .rutgers-section {
         
         padding: 1rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(45ch, 1fr));
+        gap: 1rem 0rem; 
         @include linkIcon();
-        
-        .class {
-            padding: 1rem;
-            box-sizing: content-box;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            .class-header {
-                color: rgb(255, 75, 75);
-                .class-professor {
-                    color: #333;
-                }
-            }  
 
-            .class-description {
-                
-            }
-
-            .class-footer {
-                display: flex;
-                flex-direction: column;
-            }
-        }
         .class:nth-child(even) {
             background-color: rgb(253, 247, 247);
         }
