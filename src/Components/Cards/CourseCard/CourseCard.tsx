@@ -29,7 +29,12 @@ export const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
             </div>
             <div className="course__info-section">
                 <div className="course__info-section__description">
-                    {course.description ?? "No Description Listed."}
+                    <strong>
+                        Information
+                    </strong>
+                    <div>
+                        {course.description ?? "No Description Listed."}
+                    </div>
                 </div>
                 <div className="course__info-section__resources">
                     <strong>

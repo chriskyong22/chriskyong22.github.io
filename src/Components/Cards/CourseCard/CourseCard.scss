@@ -1,10 +1,9 @@
 .course {
     display: grid;
-    grid-template-columns: 1fr;
-    padding: 1rem;
+    grid-template-columns: 1fr 1fr;
     border: 2px solid var(--clr-black-light);
     border-radius: 0.25rem;
-    width: 46ch;
+    max-width: min(100%, var(--course-card-width));
     color: var(--clr-black-light);
 }
 
@@ -14,6 +13,10 @@
 
 .course:nth-child(odd) {
     background-color: rgb(253, 247, 247, 35%);
+}
+.course__header-section {
+    padding: 1rem;
+    border-right: 1px dotted var(--clr-black-light);
 }
 
 .course__header-section__title {
@@ -29,13 +32,16 @@
     display: grid;
     grid-template-rows: 1fr auto;
     gap: 0.5rem;
+    padding: 1rem;
 }
 
 .course__info-section__description {
+    text-align: start;
     border-bottom: 1px dotted currentColor;
 }
 
 .course__info-section__resources {
+    text-align: start;
     border-bottom: 2px solid currentColor;
 }
 
