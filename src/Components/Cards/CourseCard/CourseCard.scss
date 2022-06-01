@@ -4,7 +4,7 @@
     padding: 1rem;
     border: 2px solid var(--clr-black-light);
     border-radius: 0.25rem;
-    max-width: var(--max-text-width);
+    width: 46ch;
     color: var(--clr-black-light);
 }
 
@@ -33,7 +33,9 @@
 
 .course__info-section__resources__links {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 20ch), 1fr));
+    place-items: center;
+    gap: 0.25rem;
 } 
 
 .course__info-section__link-container {
