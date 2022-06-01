@@ -289,7 +289,9 @@ a {
     .about-section {
         display: flex;
         flex-direction: column;
-        background-color:rgb(255, 244, 244);
+        height: 100%;
+        background: linear-gradient(#faf3f3, #f5f5f5);
+        //background-color:rgb(255, 244, 244);
 
         @include linkIcon();
         a {
@@ -341,17 +343,11 @@ a {
     }
 
     .rutgers-section {
-        
         padding: 1rem;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(45ch, 1fr));
         gap: 1rem 0rem; 
         @include linkIcon();
-
-        .class:nth-child(even) {
-            background-color: rgb(253, 247, 247);
-        }
-
     }
 
     .learn-section {

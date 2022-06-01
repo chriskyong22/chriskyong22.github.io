@@ -9228,7 +9228,8 @@ a {
 .main-section .about-section {
   display: flex;
   flex-direction: column;
-  background-color: #fff4f4;
+  height: 100%;
+  background: linear-gradient(#faf3f3, #f5f5f5);
 }
 .main-section .about-section a::after {
   content: "\f08e";
@@ -9286,9 +9287,6 @@ a {
   font-weight: 900;
   font-size: 0.5em;
   margin-left: 1px;
-}
-.main-section .rutgers-section .class:nth-child(even) {
-  background-color: #fdf7f7;
 }
 .main-section .learn-section a::after {
   content: "\f08e";

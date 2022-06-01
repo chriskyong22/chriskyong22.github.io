@@ -8,6 +8,14 @@
     color: var(--clr-black-light);
 }
 
+.course:nth-child(even) {
+    background-color: rgb(253, 247, 247, 50%);
+}
+
+.course:nth-child(odd) {
+    background-color: rgb(253, 247, 247, 35%);
+}
+
 .course__header-section__title {
     color: var(--clr-orange);
     margin-bottom: 0.5rem;
