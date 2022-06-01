@@ -115,7 +115,8 @@ h4 {
 }
 
 :root {
-    
+    --clr-blue-light: rgb(173, 216, 230, 80%);
+    --clr-black-light: rgb(0, 0, 0, 80%);
 }
 
 body {
@@ -172,16 +173,17 @@ body {
 }
 
 .nav-bar {
-    background-color: rgb(173, 216, 230, 80%);
+    background-color: var(--clr-blue-light);
     text-align: center;
     align-items: center;
     display: flex;
     gap: 1em;
     padding: 1em;
     min-height: 2rem;
-    border-bottom: 4px solid rgb(0, 0, 0, 80%);
-    border-bottom-left-radius: 0.4rem;
-    border-bottom-right-radius: 0.4rem;
+    border-bottom: 4px solid var(--clr-black-light);
+    --border-radius: 0.4rem;
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
 
     svg {
         padding: 0px;
@@ -233,6 +235,7 @@ body {
             text-decoration: none;
             &[aria-current="page"] {
                 opacity: 1;
+                font-weight: bold;
             }
         }
 
