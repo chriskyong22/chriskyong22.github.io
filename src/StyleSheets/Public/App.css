@@ -9122,22 +9122,25 @@ body {
   text-decoration: none;
   padding: 0.5rem 1rem;
   transform: translateY(-125%);
-  transition: transform 250ms ease-in;
 }
 
 .skip-nav-link:focus {
   position: relative;
   transform: translateY(0);
+  transition: transform 250ms ease-in;
 }
 
 .nav-bar {
-  background-color: lightblue;
+  background-color: rgba(173, 216, 230, 0.8);
   text-align: center;
   align-items: center;
   display: flex;
   gap: 1em;
   padding: 1em;
   min-height: 2rem;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.8);
+  border-bottom-left-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
 }
 .nav-bar svg {
   padding: 0px;
