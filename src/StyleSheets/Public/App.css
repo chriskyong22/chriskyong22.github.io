@@ -9095,6 +9095,7 @@ h4 {
   --clr-blue-light: rgb(173, 216, 230, 75%);
   --clr-black-light: #333;
   --clr-orange: rgb(255, 77, 77);
+  --clr-white: white;
   --max-text-width: 65ch;
 }
 
@@ -9102,6 +9103,7 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   font-family: "Merriweather Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .layout {
@@ -9109,6 +9111,10 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
 }
 
 a {
@@ -9217,6 +9223,7 @@ a {
 .main-section {
   scroll-margin-top: 1.25rem;
   text-align: center;
+  overflow: hidden;
 }
 .main-section .about-section {
   display: flex;
@@ -9421,7 +9428,7 @@ a {
 
 footer {
   background-color: #effbff;
-  box-sizing: content-box;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
   padding: 0.5rem;
   font-size: small;
   text-align: center;

@@ -118,6 +118,7 @@ h4 {
     --clr-blue-light: rgb(173, 216, 230, 75%);
     --clr-black-light: #333;
     --clr-orange: rgb(255, 77, 77);
+    --clr-white: white;
     --max-text-width: 65ch;
 }
 
@@ -125,13 +126,19 @@ body {
     font-size: $type-base-size;
     line-height: 1.5;
     font-family: "Merriweather Sans", sans-serif;
+    scroll-behavior: smooth;
 }
+
 
 .layout {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
 }
 
 a {
@@ -278,7 +285,7 @@ a {
 .main-section {
     scroll-margin-top: 1.25rem;
     text-align: center;
-
+    overflow: hidden;
     .about-section {
         display: flex;
         flex-direction: column;
@@ -334,11 +341,13 @@ a {
     }
 
     .rutgers-section {
+        
         padding: 1rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         @include linkIcon();
+        
         .class {
             padding: 1rem;
             box-sizing: content-box;
@@ -364,6 +373,7 @@ a {
         .class:nth-child(even) {
             background-color: rgb(253, 247, 247);
         }
+
     }
 
     .learn-section {
@@ -505,7 +515,7 @@ a {
 
 footer {
     background-color: rgb(239, 251, 255);
-    box-sizing: content-box;
+    border-top: 1px solid rgb(0, 0, 0, 30%);
     padding: 0.5rem;
     font-size: small;
     text-align: center;

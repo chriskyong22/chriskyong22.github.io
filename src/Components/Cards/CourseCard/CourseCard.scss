@@ -1,0 +1,49 @@
+.course {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    border: 2px solid var(--clr-black-light);
+    border-radius: 0.25rem;
+    max-width: var(--max-text-width);
+    color: var(--clr-black-light);
+}
+
+.course__header-section__title {
+    color: var(--clr-orange);
+    margin-bottom: 0.5rem;
+}
+
+.course__header-section__professor {
+    font-size: 1rem;
+}
+
+.course__info-section {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    gap: 0.5rem;
+}
+
+.course__info-section__description {
+    border-bottom: 1px dotted currentColor;
+}
+
+.course__info-section__resources {
+    border-bottom: 2px solid currentColor;
+}
+
+.course__info-section__resources__links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+} 
+
+.course__info-section__link-container {
+    text-align: center;
+}
+
+.course__info-section__link {
+    display: block;
+    padding: 0.5em 1.25em;
+    background-color: var(--clr-black-light);
+    color: var(--clr-white);
+    border-radius: 100vw;
+}

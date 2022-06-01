@@ -1,8 +1,8 @@
-interface Course {
+export interface Course {
     title: string;
     link: string;
     professor: string;
-    description: JSX.Element;
+    description?: JSX.Element;
     resources: JSX.Element[];
 }
 
@@ -11,10 +11,6 @@ export const Courses: Course[] = [
         title: "Computer Architecture (CS211)",
         link: "https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-211-computer-architecture",
         professor: "Santosh Nagarakatte",
-        description: (
-            <>
-            </>
-        ),
         resources: [
             <a href="https://docs.google.com/document/d/1zx9_UdZKedQ9rdo71nnmB8ctlnWbsB1d60PjuuaERWk/edit#heading=h.y11un4hmkuqh"
                 rel="noreferrer noopener" 
@@ -35,10 +31,6 @@ export const Courses: Course[] = [
         title: "Systems Programming (CS214)",
         link: "https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-214-systems-programming",
         professor: "John-Austen Francisco",
-        description: (
-            <>
-            </>
-        ),
         resources: [
             <a 
                 href="https://docs.google.com/document/d/1c1VyZsCuHALbyyewCsDPrxtBTjVmoBLLwbqAfcx7q6w/edit" 
@@ -61,10 +53,6 @@ export const Courses: Course[] = [
         title: "Principles Of Programming Languages (CS314)",
         link: "https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-314-principles-of-programming-languages",
         professor: "Zheng Zhang",
-        description: (
-            <>
-            </>
-        ), 
         resources: [
             <a 
                 href="https://docs.google.com/document/d/1amzEzb6NhVo6OYYDQWc7UM8OSPh9wNDZu5cGOiPiwZM/edit"
@@ -79,10 +67,6 @@ export const Courses: Course[] = [
         title: "Principles Of Information and Data Management (CS336)",
         link: "https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-336-principles-of-information-and-data-management",
         professor: "Antonio Miranda Garcia",
-        description: (
-            <>
-            </>
-        ),
         resources: [
             <a 
                 href="https://docs.google.com/document/d/15jZZL6oaAUu2KPy96Yy8rQcWH7-dBjVC_6gcsMGTo7s/edit"
@@ -111,10 +95,6 @@ export const Courses: Course[] = [
         title: "Internet Technology (CS352)",
         link: "https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-352-internet-technology",
         professor: "Badri Nath",
-        description: (
-            <>
-            </>
-        ),
         resources: [
             <a 
                 href="https://docs.google.com/document/d/1zupHNAi5O-3e022Wh10qaz2Fcvo4OH17wUP06nx6W0o/edit"
@@ -149,11 +129,7 @@ export const Courses: Course[] = [
     {
         title: "Operating Systems (CS416)",
         link: "https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-416-operating-systems-design",
-        professor: "Sudarsun Kannan",
-        description: (
-            <>
-            </>
-        ), 
+        professor: "Sudarsun Kannan", 
         resources: [
             <a 
                 href="https://docs.google.com/document/d/1gUBocLHpy_Vfifs-LnJtgsm4OTq74jLmfZTqJdaFEq0/edit"
@@ -182,10 +158,6 @@ export const Courses: Course[] = [
         title: "Distributed Systems (CS417)",
         link: "https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-417-distributed-systems-concepts-and-design",
         professor: "Paul Krzyzanowski",
-        description: (
-            <>
-            </>
-        ), 
         resources: [
             <a 
                 href="https://slash-eyebrow-406.notion.site/Distributed-417-Notes-aa8836db469d452f858193456575f494"

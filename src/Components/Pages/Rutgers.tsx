@@ -1,5 +1,6 @@
 import react, { useEffect } from "react"
 import { Courses } from "../../Data/RutgersData"
+import { CourseCard } from "../Cards/CourseCard/CourseCard"
 
 export const Rutgers = () => {
     useEffect(() => {
@@ -7,6 +8,8 @@ export const Rutgers = () => {
     }, [])
     return (
         <section className="rutgers-section">
+            <CourseCard course={Courses[0]}/>
+
             {
                 Courses.map((course, idx) => {
                     return (
