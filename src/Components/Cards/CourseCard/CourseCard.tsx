@@ -36,7 +36,13 @@ export const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
                         Resources 
                     </strong>
                     <div className="course__info-section__resources__links">
-                        {course.resources}
+                        {course.resources.map((resource, _idx) => {
+                            return (
+                                <React.Fragment key={`resource-link${_idx} ${course.title}`}>
+                                    {resource}
+                                </React.Fragment>
+                            )
+                        })}
                     </div>
                 </div>
                 <div className="course__info-section__link-container">
