@@ -116,8 +116,9 @@ h4 {
 
 :root {
     --clr-blue-light: rgb(173, 216, 230, 75%);
-    --clr-black-light: rgb(0, 0, 0, 80%);
+    --clr-black-light: #333;
     --clr-orange: rgb(255, 77, 77);
+    --max-text-width: 65ch;
 }
 
 body {
@@ -150,7 +151,7 @@ a {
 }
 
 .text {
-    max-width: 65ch;
+    max-width: var(--max-text-width);
     text-align: start;
 }
 
@@ -181,7 +182,8 @@ a {
     gap: 1em;
     padding: 1em;
     min-height: 2rem;
-    border-bottom: 4px solid var(--clr-black-light);
+    border-bottom: 3px solid var(--clr-black-light);
+
     --border-radius: 0.4rem;
     border-bottom-left-radius: var(--border-radius);
     border-bottom-right-radius: var(--border-radius);
@@ -209,9 +211,7 @@ a {
     }
 
     @keyframes moveCircles {
-        0% { 
-            transform: (1) 
-        }
+        0% { }
         25% {
             transform: scaleY(1.25)
         }
@@ -227,12 +227,13 @@ a {
     }
 
     .nav-links {
-        align-items: flex-end;
         display: flex;
         gap: 0.5em;
         a {
             color: var(--clr-orange);
-            opacity: 0.85;
+            opacity: 0.80;
+            transition: opacity 250ms ease-in;
+
             &[aria-current="page"] {
                 opacity: 1;
                 font-weight: bold;
@@ -270,53 +271,41 @@ a {
 
 @mixin gridTextColumn() {
     display: grid;
-    grid-template-columns: minmax(auto, 70ch);
+    grid-template-columns: minmax(auto, var(--max-text-width));
     justify-content: center;
 }
 
 .main-section {
     scroll-margin-top: 1.25rem;
     text-align: center;
+
     .about-section {
         display: flex;
         flex-direction: column;
+        background-color:rgb(255, 244, 244);
+
+        @include linkIcon();
+        a {
+            color: blue;
+        }
+
+        p {
+            color: var(--clr-black-light);
+        }
 
         .info-section{
-            color: rgb(255, 75, 75);
+            color: var(--clr-orange);
             padding: 1em;
             @include gridTextColumn();
-            background-color:rgb(255, 249, 249);
-            .main-text {
-                @include linkIcon();
-                a {
-                    color: blue;
-                }
-                p {
-                    color: #333;
-                }
-            }
         }
 
         .interest-section {
             text-align: start;
             padding: 1em;
             @include gridTextColumn();
-            background-color:rgb(255, 244, 244);
-            color: rgb(255, 75, 75);
+            color: var(--clr-orange);
             h3 {
                 color: #255b98;
-            }
-
-            h4 {
-                color: #4974a5;
-            }
-
-            @include linkIcon();
-            a {
-                color: blue;
-            }
-            p {
-                color: #333;
             }
         }
     }
@@ -324,7 +313,7 @@ a {
 
     .projects-section {
         display: grid;
-        grid-template-columns: minmax(auto, 80ch);
+        grid-template-columns: minmax(auto, var(--max-text-width));
         justify-content: center;
         .project {
             .project-title {

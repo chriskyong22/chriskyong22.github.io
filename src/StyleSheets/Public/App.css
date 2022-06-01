@@ -14,8 +14,7 @@
 .main-section .learn-section a::after,
 .main-section .rutgers-section a::after,
 .main-section .projects-section .project .project-title a::after,
-.main-section .about-section .interest-section a::after,
-.main-section .about-section .info-section .main-text a::after,
+.main-section .about-section a::after,
 .far,
 .fa-regular,
 .fal,
@@ -35,7 +34,7 @@
   text-rendering: auto;
 }
 
-.main-section .learn-section a::after, .main-section .rutgers-section a::after, .main-section .projects-section .project .project-title a::after, .main-section .about-section .interest-section a::after, .main-section .about-section .info-section .main-text a::after {
+.main-section .learn-section a::after, .main-section .rutgers-section a::after, .main-section .projects-section .project .project-title a::after, .main-section .about-section a::after {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -7130,8 +7129,7 @@ readers do not read off random characters that represent icons */
 .main-section .learn-section a::after,
 .main-section .rutgers-section a::after,
 .main-section .projects-section .project .project-title a::after,
-.main-section .about-section .interest-section a::after,
-.main-section .about-section .info-section .main-text a::after {
+.main-section .about-section a::after {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
 }
@@ -9095,8 +9093,9 @@ h4 {
 
 :root {
   --clr-blue-light: rgb(173, 216, 230, 75%);
-  --clr-black-light: rgb(0, 0, 0, 80%);
+  --clr-black-light: #333;
   --clr-orange: rgb(255, 77, 77);
+  --max-text-width: 65ch;
 }
 
 body {
@@ -9118,7 +9117,7 @@ a {
 }
 
 .text {
-  max-width: 65ch;
+  max-width: var(--max-text-width);
   text-align: start;
 }
 
@@ -9149,7 +9148,7 @@ a {
   gap: 1em;
   padding: 1em;
   min-height: 2rem;
-  border-bottom: 4px solid var(--clr-black-light);
+  border-bottom: 3px solid var(--clr-black-light);
   --border-radius: 0.4rem;
   border-bottom-left-radius: var(--border-radius);
   border-bottom-right-radius: var(--border-radius);
@@ -9173,9 +9172,6 @@ a {
   animation-delay: 400ms;
 }
 @keyframes moveCircles {
-  0% {
-    transform: 1;
-  }
   25% {
     transform: scaleY(1.25);
   }
@@ -9190,13 +9186,13 @@ a {
   }
 }
 .nav-bar .nav-links {
-  align-items: flex-end;
   display: flex;
   gap: 0.5em;
 }
 .nav-bar .nav-links a {
   color: var(--clr-orange);
-  opacity: 0.85;
+  opacity: 0.8;
+  transition: opacity 250ms ease-in;
 }
 .nav-bar .nav-links a[aria-current=page] {
   opacity: 1;
@@ -9225,57 +9221,41 @@ a {
 .main-section .about-section {
   display: flex;
   flex-direction: column;
+  background-color: #fff4f4;
 }
-.main-section .about-section .info-section {
-  color: #ff4b4b;
-  padding: 1em;
-  display: grid;
-  grid-template-columns: minmax(auto, 70ch);
-  justify-content: center;
-  background-color: #fff9f9;
-}
-.main-section .about-section .info-section .main-text a::after {
+.main-section .about-section a::after {
   content: "\f08e";
   font-weight: 900;
   font-size: 0.5em;
   margin-left: 1px;
 }
-.main-section .about-section .info-section .main-text a {
+.main-section .about-section a {
   color: blue;
 }
-.main-section .about-section .info-section .main-text p {
-  color: #333;
+.main-section .about-section p {
+  color: var(--clr-black-light);
+}
+.main-section .about-section .info-section {
+  color: var(--clr-orange);
+  padding: 1em;
+  display: grid;
+  grid-template-columns: minmax(auto, var(--max-text-width));
+  justify-content: center;
 }
 .main-section .about-section .interest-section {
   text-align: start;
   padding: 1em;
   display: grid;
-  grid-template-columns: minmax(auto, 70ch);
+  grid-template-columns: minmax(auto, var(--max-text-width));
   justify-content: center;
-  background-color: #fff4f4;
-  color: #ff4b4b;
+  color: var(--clr-orange);
 }
 .main-section .about-section .interest-section h3 {
   color: #255b98;
 }
-.main-section .about-section .interest-section h4 {
-  color: #4974a5;
-}
-.main-section .about-section .interest-section a::after {
-  content: "\f08e";
-  font-weight: 900;
-  font-size: 0.5em;
-  margin-left: 1px;
-}
-.main-section .about-section .interest-section a {
-  color: blue;
-}
-.main-section .about-section .interest-section p {
-  color: #333;
-}
 .main-section .projects-section {
   display: grid;
-  grid-template-columns: minmax(auto, 80ch);
+  grid-template-columns: minmax(auto, var(--max-text-width));
   justify-content: center;
 }
 .main-section .projects-section .project .project-title a {
