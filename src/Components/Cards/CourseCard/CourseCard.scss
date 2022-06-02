@@ -15,6 +15,8 @@
     background-color: rgb(253, 247, 247, 35%);
 }
 .course__header-section {
+    display: grid;
+    grid-template-rows: 1fr auto;
     padding: 1rem;
     border-right: 1px dotted var(--clr-black-light);
 }
@@ -26,6 +28,7 @@
 
 .course__header-section__professor {
     font-size: 1rem;
+    border-bottom: 1px solid var(--clr-black-faded);
 }
 
 .course__info-section {
@@ -42,7 +45,8 @@
 
 .course__info-section__resources {
     text-align: start;
-    border-bottom: 2px solid currentColor;
+    border-bottom: 2px solid var(--clr-black-faded);
+
 }
 
 .course__info-section__resources__links {
@@ -62,4 +66,9 @@
     background-color: var(--clr-black-light);
     color: var(--clr-white);
     border-radius: 100vw;
+    transition: box-shadow 175ms ease-in;
+}
+
+.course__info-section__link:hover {
+    box-shadow: 2px 2px 3px var(--clr-black-faded);
 }

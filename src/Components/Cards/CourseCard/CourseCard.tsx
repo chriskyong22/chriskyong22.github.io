@@ -26,6 +26,15 @@ export const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
                         Instructor {course.professor}
                     </h3>
                 </header>
+                <div className="course__info-section__link-container">
+                    <a 
+                        className="course__info-section__link"
+                        href={course.link}
+                        rel="noreferrer noopener" target="_blank"
+                    >
+                        Learn more
+                    </a>
+                </div>
             </div>
             <div className="course__info-section">
                 <div className="course__info-section__description">
@@ -49,15 +58,6 @@ export const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
                             )
                         })}
                     </div>
-                </div>
-                <div className="course__info-section__link-container">
-                    <a 
-                        className="course__info-section__link"
-                        href={course.link}
-                        rel="noreferrer noopener" target="_blank"
-                    >
-                        Learn more
-                    </a>
                 </div>
             </div>
         </section>

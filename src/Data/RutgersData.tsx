@@ -8,7 +8,7 @@ export interface Course {
 
 export const Courses: Course[] = [
     {
-        title: "Computer Architecture (CS211)",
+        title: "Computer Architecture",
         link: "https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-211-computer-architecture",
         professor: "Santosh Nagarakatte",
         resources: [
@@ -28,7 +28,7 @@ export const Courses: Course[] = [
         ]
     },
     {
-        title: "Systems Programming (CS214)",
+        title: "Systems Programming",
         link: "https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-214-systems-programming",
         professor: "John-Austen Francisco",
         resources: [
@@ -50,7 +50,7 @@ export const Courses: Course[] = [
         ]
     }, 
     {
-        title: "Principles Of Programming Languages (CS314)",
+        title: "Principles Of Programming Languages",
         link: "https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-314-principles-of-programming-languages",
         professor: "Zheng Zhang",
         resources: [
@@ -64,7 +64,7 @@ export const Courses: Course[] = [
         ]
     },
     {
-        title: "Principles Of Information and Data Management (CS336)",
+        title: "Principles Of Information and Data Management",
         link: "https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-336-principles-of-information-and-data-management",
         professor: "Antonio Miranda Garcia",
         resources: [
@@ -92,7 +92,7 @@ export const Courses: Course[] = [
         ]
     },
     {
-        title: "Internet Technology (CS352)",
+        title: "Internet Technology",
         link: "https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-352-internet-technology",
         professor: "Badri Nath",
         resources: [
@@ -127,7 +127,7 @@ export const Courses: Course[] = [
         ]
     }, 
     {
-        title: "Operating Systems (CS416)",
+        title: "Operating Systems",
         link: "https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-416-operating-systems-design",
         professor: "Sudarsun Kannan", 
         resources: [
@@ -155,7 +155,7 @@ export const Courses: Course[] = [
         ]
     }, 
     {
-        title: "Distributed Systems (CS417)",
+        title: "Distributed Systems",
         link: "https://www.cs.rutgers.edu/academics/undergraduate/course-synopses/course-details/01-198-417-distributed-systems-concepts-and-design",
         professor: "Paul Krzyzanowski",
         resources: [
