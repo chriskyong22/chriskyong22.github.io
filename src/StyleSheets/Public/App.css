@@ -9343,17 +9343,20 @@ a {
 .main-section .contact-section .contactTitle {
   padding-top: 0.5em;
   color: #3273ff;
+  margin-inline: auto;
+  width: max-content;
 }
 .main-section .contact-section .contactTitle::after {
   content: "";
   display: block;
-  margin: 0 auto;
-  width: 80%;
-  border-bottom: 2px solid black;
+  margin-top: 0.5rem;
+  --extra-padding: 6rem;
+  width: calc(100% + var(--extra-padding) + var(--extra-padding));
+  transform: translateX(calc(-1 * var(--extra-padding)));
+  border-bottom: 2px solid var(--clr-black-light);
 }
 .main-section .contact-section .contactLinks {
-  width: 80%;
-  margin: 0 auto;
+  margin-inline: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9381,10 +9384,10 @@ a {
   content: attr(tooltip-data);
   font-size: 1rem;
   display: block;
-  transition: transform ease-in-out 0.5s;
   transform: scale(0);
 }
 .main-section .contact-section .contactLinks .email:hover::after {
+  transition: transform ease-in-out 0.5s;
   transform: scale(1);
 }
 .main-section .contact-section .contactLinks .email:hover {
@@ -9392,7 +9395,7 @@ a {
 }
 .main-section .contact-section .contactLinks .github {
   width: var(--icon-width);
-  margin: 0 auto;
+  margin-inline: auto;
   transition: transform ease-in 250ms;
 }
 .main-section .contact-section .contactLinks .github svg:hover {
@@ -9401,7 +9404,7 @@ a {
 .main-section .contact-section .contactLinks .linkedin {
   width: var(--icon-width);
   transition: transform ease-in 250ms;
-  margin: 0 auto;
+  margin-inline: auto;
   --linkedinColor: #0a66c2;
   fill: var(--linkedinColor);
 }
@@ -9411,7 +9414,7 @@ a {
 
 footer {
   background-color: #effbff;
-  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-top: 1px solid var(--clr-black-faded);
   padding: 0.5rem;
   font-size: small;
   text-align: center;
